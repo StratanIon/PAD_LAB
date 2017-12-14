@@ -1,8 +1,8 @@
 package com.company;
 
 public class CommandMessageManager {
-    QueueManager queueManager = new QueueManager();
-    Message message = new Message();
+    private final QueueManager queueManager = QueueManager.getInstance();
+    //Message message = new Message();
 
     public void execute(Message message){
         if(message == null){
